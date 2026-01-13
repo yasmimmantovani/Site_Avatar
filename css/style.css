@@ -1,0 +1,130 @@
+:root {
+    --main-color: #1d2b5a;
+    --sec-color: #304ba3;
+    --bg: #2969ca;
+    --texto: #e7e7e7;
+    --texto-2: #3c5bbe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Início Header */
+.nav {
+    background-color: var(--main-color);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-img {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    margin-left: 35px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 35px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--texto);
+    padding: 20px;
+}
+
+.nav-list a:hover {
+    color: #FFFFFF;
+}
+/* Fim Header */
+
+/* Início Main */
+.main {
+    width: 100%;
+    background-color: var(--bg);
+    height: calc(100vh - 80px);
+    background-image: url("../images/avatarbg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.main h1 {
+    color: var(--texto);
+    font-size: 54px;
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: var(--texto);
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action {
+    cursor: pointer;
+    background-color: var(--sec-color);
+    color: var(--texto);
+    border: 0;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.call-to-action:hover {
+    transform: scale(1.1);
+    background-color: var(--main-color);
+}
+
+.main a {
+    text-decoration: none;
+}
+/* Fim Main */
+
+/* Início About */
+.about {
+    background-color: var(--texto);
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div {
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.about img {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.about div h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}

@@ -34,7 +34,7 @@ body {
     width: 200px;
     height: 50px;
     align-self: center;
-    margin-left: 45px;
+    margin-left: 10%;
 }
 
 .nav-list {
@@ -42,7 +42,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     list-style: none;
-    margin-right: 35px;
+    margin-right: 10%;
 }
 
 .nav-list a {
@@ -109,8 +109,7 @@ body {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 80px;
 
     display: flex;
     align-items: center;
@@ -130,4 +129,187 @@ body {
 .about div h2 {
     font-size: 32px;
     margin-bottom: 14px;
+}
+/* Fim About */
+
+/* Início Personagens */
+.personagens {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: var(--bg);
+    text-align: center;
+}
+
+.personagens h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: var(--texto);
+}
+
+.personagens p {
+    margin-bottom: 40px;
+    font-style: italic;
+    color: var(--texto);
+}
+
+.personagens-img {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.personagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 22%;
+    text-align: center;
+}
+
+.personagem img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.personagem img:hover {
+    opacity: 1;
+}
+
+.personagem h3 {
+    color: var(--texto);
+}
+
+.personagem p {
+    font-size: 18px;
+    color: var(--texto);
+    margin-top: 8px;
+}
+
+.action {
+    background-color: var(--main-color);
+    border: 0;
+    color: var(--texto);
+    padding: 12px 35px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action:hover {
+    transform: scale(1.1);
+    background-color: var(--sec-color);
+}
+/* Fim Personagens */
+
+/* Início Footer */
+footer {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--texto);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+footer p {
+    margin-left: 12px;
+}
+/* Fim Footer*/
+
+/* Responsividade */
+@media (max-width: 1050px) {
+    /* Início Header*/
+    .nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin-right: 0;
+    }
+
+    .nav-img {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    /* Fim Header */
+
+    /* Início Main */
+    .main h1 {
+        font-size: 45px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+    /* Fim Main*/
+
+    /* Início About */
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 45px;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+    /*Fim About*/
+
+    /* Início Personagens*/
+    .personagem p {
+        font-size: 15px;
+    }
+    /* Fim Personagens */
+
+    /* Início Footer */
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+    /* Fim Footer */
 }

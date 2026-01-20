@@ -238,11 +238,13 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 1050px) {
+
     /* Início Header*/
     .nav {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        height: 150px;
     }
 
     .nav-list {
